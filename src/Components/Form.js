@@ -1,7 +1,7 @@
 import React from "react";
 
 const Form = (props) => {
-    const {change, submit} = props;
+    const {change, submit, errors} = props;
     const { username, email, password, terms} = props.values;
 
     const onChange = (e) => {
@@ -16,6 +16,10 @@ const Form = (props) => {
     }
     return (
         <div>
+            <p>{errors.username}</p>
+            <p>{errors.email}</p>
+            <p>{errors.password}</p>
+            <p>{errors.terms}</p>
             <form onSubmit={onSubmit}>
                 <label>Name:
                     <input 
