@@ -52,7 +52,7 @@ const Form = (props) => {
                         checked={terms}
                         onChange={onChange}
                     />
-                    <input type="submit" value="Create a Friend!" />
+                    <input name="create-button" type="submit" value="Create a Friend!" />
                 </label>
             </form>
         </div>
